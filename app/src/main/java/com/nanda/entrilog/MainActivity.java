@@ -1,5 +1,6 @@
 package com.nanda.entrilog;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -27,12 +28,18 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String getUsername=ed1.getText().toString();
+                String getUsername = ed1.getText().toString();
+                String getPassword = ed2.getText().toString();
+                if (getUsername.equals("admin") && getPassword.equals("1234")) {
+                    Intent i = new Intent(getApplicationContext(), log.class);
+                    startActivity(i);
 
-                Toast.makeText(getApplicationContext(),getUsername,Toast.LENGTH_LONG).show();
 
-
+                } else {
+                    Toast.makeText(getApplicationContext(), "invalid credentials", Toast.LENGTH_LONG).show();
+                }
             }
         });
+
             }
 }
