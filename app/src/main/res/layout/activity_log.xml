@@ -8,7 +8,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="name"/>
+        android:text="name"
+        android:drawableLeft="@drawable/baseline_keyboard_double_arrow_right_24"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +18,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="adm no"/>
+        android:text="adm no"
+        android:drawableLeft="@drawable/baseline_keyboard_double_arrow_right_24"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +28,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="system no"/>
+        android:text="system no"
+        android:drawableLeft="@drawable/baseline_keyboard_double_arrow_right_24"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,11 +38,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_keyboard_double_arrow_right_24"
         android:text="department"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint=" enter department"
+
         android:id="@+id/dept"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"

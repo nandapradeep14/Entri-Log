@@ -3,16 +3,25 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="200px"
+
+    android:background="@drawable/background"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="166dp"
+        android:layout_height="169dp"
+        android:background="@drawable/logo" />
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="username"
-        />
+        android:text="username" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="enter username"
+        android:drawableLeft="@drawable/baseline_lock_24"
         android:id="@+id/uname"/>
     <TextView
         android:layout_width="match_parent"
@@ -23,12 +32,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_key_24"
         android:hint="enter the password"
         android:inputType="textPassword"
         android:id="@+id/pass"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="login"
         android:id="@+id/logbtn"
         />
